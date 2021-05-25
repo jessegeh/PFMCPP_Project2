@@ -16,15 +16,13 @@ video: Chapter 2 - Part 3
  
  1) Write down the names of all of the primitives available in C++ (excluding wchar_t) here: 
  
+bool, char, int, float, double, void
  
  
  
  
  
- 
- 
- 
- 
+
  
 2) for each primitive type, write out 3 variable declarations inside the variableDeclaration() function on line 59.
     a) give each variable declaration an initial value
@@ -56,10 +54,24 @@ void variableDeclarations()
 {
     //example:
     int number = 2; //declaration of a variable named "number", that uses the primitive type 'int', and the variable's initial value is '2'
+    int people = 3;
+    int badgers = 4;
+    char grade = 'a';
+    char chapter = '2';
+    char lesson = '1';
+    bool hasCar = false;
+    bool needsCoffee = true;
+    bool accidentallyCommitedToMaster = true;
+    float gpa = 3.5f;
+    float speed = 45.67f;
+    float age = 32.45f;
+    double price = 2.85;
+    double squareFeet = 45.67;
+    double weight = 95.4;
     
 
     
-    ignoreUnused(number); //passing each variable declared to the ignoreUnused() function
+    ignoreUnused(number, people, badgers, grade, chapter, lesson, hasCar, needsCoffee, accidentallyCommitedToMaster, gpa, speed, age, price, squareFeet, weight); //passing each variable declared to the ignoreUnused() function
 }
 
 /*
@@ -75,42 +87,110 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
 /*
  1)
  */
+ bool flyAPlane(int maxSpeed, int planeModel = 4, int planeAge = 30)
+ {
+     ignoreUnused(maxSpeed, planeModel, planeAge);
+
+     return {};
+ }
 
 /*
  2)
  */
 
+ double calculateAverage(int a, int b, int c)
+ {
+     ignoreUnused(a, b, c);
+
+     return {};
+ }
+
 /*
  3)
  */
+
+ bool washDishes(bool dirtyDishes = true, int numberOfDishes = 56)
+ {
+     ignoreUnused(dirtyDishes, numberOfDishes);
+
+     return {};
+ }
 
 /*
  4)
  */
 
+bool playGuitar(bool isRockNRoll = true, int numberOfStrings = 6, int numberOfChords = 3)
+{
+    ignoreUnused(isRockNRoll, numberOfStrings, numberOfChords);
+
+    return {};
+}
 /*
  5)
  */
+
+bool eatCandy(int numberOfCandy = 4, bool teethAreRotten = true)
+{
+    ignoreUnused(numberOfCandy, teethAreRotten);
+    
+    return {};
+}
 
 /*
  6)
  */
 
+ int numberOfChordsNeeded(int numberOfBars = 4, bool isPopMusic = true)
+ {
+     ignoreUnused(numberOfBars, isPopMusic);
+
+     return {};
+ }
+
 /*
  7)
  */
+
+bool createPlugin(int durationOfLoop, float durationOfFeedback = 4.5f)
+{
+    ignoreUnused(durationOfLoop, durationOfFeedback);
+
+    return {};
+}
 
 /*
  8)
  */
 
+int createScoreCard(char round = 'a', int numberOfPlayers = 6)
+{
+    ignoreUnused(round, numberOfPlayers);
+
+    return {};
+}
+
 /*
  9)
  */
 
+bool goBirding(int numberOfBirdsSpotted = 99, int numberOfBirdsMissed = 34)
+{
+    ignoreUnused(numberOfBirdsSpotted, numberOfBirdsMissed);
+
+    return {};
+}
+
 /*
  10)
  */
+
+bool makeAPizza(int numberOfHoursCoding = 8, bool hungry = true)
+{
+    ignoreUnused(numberOfHoursCoding, hungry);
+
+    return {};
+}
 
 /*
  MAKE SURE YOU ARE NOT ON THE MASTER BRANCH
@@ -132,27 +212,58 @@ int main()
     auto carRented = rentACar(6, 2); 
     
     //1)
+
+    auto planeFlown = flyAPlane(900, 5, 25);
     
     //2)
+
+    auto average = calculateAverage(4, 5, 7);
     
     //3)
+
+    auto dishesWashed = washDishes(true, 34);
     
     //4)
+
+    auto guitarPlayed = playGuitar(true, 6, 2);
     
     //5)
+
+    auto candyEaten = eatCandy(65, false);
     
     //6)
+
+    auto chordsNeeded = numberOfChordsNeeded(6, false);
     
     //7)
+
+    auto pluginCreated = createPlugin(5006, 7.746f);
     
     //8)
+
+    auto scoreCardCreated = createScoreCard('b', 7);
     
     //9)
+
+    auto goneBirding = goBirding(56, 87);
     
     //10)
+
+    auto madePizza = makeAPizza(4, true);
     
     
     ignoreUnused(carRented);
+    ignoreUnused(planeFlown);
+    ignoreUnused(average);
+    ignoreUnused(dishesWashed);
+    ignoreUnused(guitarPlayed);
+    ignoreUnused(candyEaten);
+    ignoreUnused(chordsNeeded);
+    ignoreUnused(pluginCreated);
+    ignoreUnused(scoreCardCreated);
+    ignoreUnused(goneBirding);
+    ignoreUnused(madePizza);
+
     std::cout << "good to go!" << std::endl;
     return 0;    
 }
