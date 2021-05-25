@@ -87,34 +87,34 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
 /*
  1)
  */
- bool flyAPlane(int maxSpeed, int planeModel = 4, int planeAge = 30)
- {
+bool flyAPlane(int maxSpeed, int planeModel = 4, int planeAge = 30)
+{
     ignoreUnused(maxSpeed, planeModel, planeAge);
 
     return {};
- }
+}
 
 /*
  2)
  */
 
- double calculateAverage(int a, int b, int c)
- {
+double calculateAverage(int a, int b, int c)
+{
     ignoreUnused(a, b, c);
 
     return {};
- }
+}
 
 /*
  3)
  */
 
- bool washDishes(bool dirtyDishes = true, int numberOfDishes = 56)
- {
+bool washDishes(bool dirtyDishes = true, int numberOfDishes = 56)
+{
     ignoreUnused(dirtyDishes, numberOfDishes);
 
     return {};
- }
+}
 
 /*
  4)
