@@ -89,9 +89,9 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
  */
  bool flyAPlane(int maxSpeed, int planeModel = 4, int planeAge = 30)
  {
-     ignoreUnused(maxSpeed, planeModel, planeAge);
+    ignoreUnused(maxSpeed, planeModel, planeAge);
 
-     return {};
+    return {};
  }
 
 /*
@@ -100,9 +100,9 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
 
  double calculateAverage(int a, int b, int c)
  {
-     ignoreUnused(a, b, c);
+    ignoreUnused(a, b, c);
 
-     return {};
+    return {};
  }
 
 /*
@@ -111,9 +111,9 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
 
  bool washDishes(bool dirtyDishes = true, int numberOfDishes = 56)
  {
-     ignoreUnused(dirtyDishes, numberOfDishes);
+    ignoreUnused(dirtyDishes, numberOfDishes);
 
-     return {};
+    return {};
  }
 
 /*
@@ -141,12 +141,12 @@ bool eatCandy(int numberOfCandy = 4, bool teethAreRotten = true)
  6)
  */
 
- int numberOfChordsNeeded(int numberOfBars = 4, bool isPopMusic = true)
- {
-     ignoreUnused(numberOfBars, isPopMusic);
+int numberOfChordsNeeded(int numberOfBars = 4, bool isPopMusic = true)
+{
+    ignoreUnused(numberOfBars, isPopMusic);
 
-     return {};
- }
+    return {};
+}
 
 /*
  7)
