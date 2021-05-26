@@ -252,17 +252,7 @@ int main()
     auto madePizza = makeAPizza(4, true);
     
     
-    ignoreUnused(carRented);
-    ignoreUnused(planeFlown);
-    ignoreUnused(average);
-    ignoreUnused(dishesWashed);
-    ignoreUnused(guitarPlayed);
-    ignoreUnused(candyEaten);
-    ignoreUnused(chordsNeeded);
-    ignoreUnused(pluginCreated);
-    ignoreUnused(scoreCardCreated);
-    ignoreUnused(goneBirding);
-    ignoreUnused(madePizza);
+    ignoreUnused(carRented, planeFlown, average, dishesWashed, guitarPlayed, candyEaten, chordsNeeded, pluginCreated, scoreCardCreated, goneBirding, madePizza);
 
     std::cout << "good to go!" << std::endl;
     return 0;    
